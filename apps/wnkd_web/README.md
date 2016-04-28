@@ -1,6 +1,7 @@
-wnkd
+wnkd_web
 =====
-WNK Designs Marketting site
+
+An OTP application
 
 Build
 -----
