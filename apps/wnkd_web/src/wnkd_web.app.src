@@ -1,16 +1,19 @@
-{application, wnkd_web,
- [{description, "An OTP application"},
-  {vsn, "0.1.0"},
-  {registered, []},
-  {mod, { wnkd_web_app, []}},
-  {applications,
-   [kernel,
-    stdlib
-   ]},
-  {env,[]},
-  {modules, []},
-
-  {maintainers, []},
-  {licenses, []},
-  {links, []}
- ]}.
+{application, wnkd_web, [
+	{description, "Wnk Design web interface"},
+	{vsn, "0.1.0"},
+	{registered, []},
+	{mod, { wnkd_web_app, []}},
+	{applications, [
+		kernel,
+		stdlib,
+		lager,
+		erlydtl,
+		cowboy,
+		jsx
+	]},
+	{env,[]},
+	{modules, []},
+	{maintainers, []},
+	{licenses, []},
+	{links, []}
+]}.

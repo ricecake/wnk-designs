@@ -1,16 +1,16 @@
-{application, wnkd,
- [{description, "An OTP application"},
-  {vsn, "0.1.0"},
-  {registered, []},
-  {mod, { wnkd_app, []}},
-  {applications,
-   [kernel,
-    stdlib
-   ]},
-  {env,[]},
-  {modules, []},
-
-  {maintainers, []},
-  {licenses, []},
-  {links, []}
- ]}.
+{application, wnkd, [
+	{description, "Wnk Design data management app"},
+	{vsn, "0.1.0"},
+	{registered, []},
+	{mod, { wnkd_app, []}},
+	{applications, [
+		kernel,
+		stdlib,
+		lager
+	]},
+	{env,[]},
+	{modules, []},
+	{maintainers, []},
+	{licenses, []},
+	{links, []}
+]}.
