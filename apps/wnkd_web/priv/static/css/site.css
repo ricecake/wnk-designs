@@ -8,9 +8,9 @@ body {
 
 #main-content {
 	background-color: white;
-	width: 100%;
+/*	width: 100%;
 	height: 100vh;
-	margin: 0 auto;
+*/	margin: 0 auto;
 }
 
 nav, footer {
@@ -31,4 +31,15 @@ nav, footer {
 
 .logo {
 	width: 10%;
+}
+
+img.preview-image {
+	filter: grayscale(75%);
+	width: 100px;
+	transition:all linear 0.25s;
+}
+
+img.preview-image:hover {
+	filter: grayscale(0%);
+	width: 200px;
 }
