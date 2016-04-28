@@ -28,3 +28,7 @@ nav, footer {
 	text-decoration: underline;
 	cursor: pointer;
 }
+
+.logo {
+	width: 10%;
+}
