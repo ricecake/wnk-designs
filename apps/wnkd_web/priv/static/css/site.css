@@ -13,6 +13,11 @@ body {
 	margin: 0 auto;
 }
 
+nav, footer {
+	background-color: white;
+	margin: 1% 0% 1% 0%;
+}
+
 .link-display {
 	border: none;
 	background: none;

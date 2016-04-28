@@ -12,6 +12,7 @@
 		{% endblock %}
 	</head>
 	<nav>
+		WNK Designs
 	</nav>
 	<body>
 		<div id="main-content">
@@ -26,5 +27,6 @@
                 </script>
 	</body>
 	<footer>
+		Details
 	</footer>
 </html>
