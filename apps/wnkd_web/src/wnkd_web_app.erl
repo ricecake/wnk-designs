@@ -15,11 +15,25 @@
 %%====================================================================
 
 start(_StartType, _StartArgs) ->
-    wnkd_web_sup:start_link().
+	case wnkd_web_sup:start_link() of
+		{ok, Pid} ->
+			Dispatch = cowboy_router:compile([
+				{'_', [
+					% Static File route
+					{"/static/[...]", cowboy_static, {priv_dir, wnkd_web, "static/"}},
+					% Dynamic Pages
+					{"/", wnkd_web_page, index}
+				]}
+			]),
+			{ok, _} = cowboy:start_http(wnkd_web, 25, [{ip, {127,0,0,1}}, {port, 8686}],
+							[{env, [{dispatch, Dispatch}]}]),
+			{ok, Pid}
+	end.
 
 %%--------------------------------------------------------------------
+
 stop(_State) ->
-    ok.
+	ok.
 
 %%====================================================================
 %% Internal functions
