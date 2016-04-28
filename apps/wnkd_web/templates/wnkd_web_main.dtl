@@ -11,7 +11,8 @@
 		{% block headExtras %}
 		{% endblock %}
 	</head>
-<body>
+	<nav>
+	</nav>
 	<body>
 		<div id="main-content">
 			{% block mainContent %}
@@ -24,4 +25,6 @@
                         });
                 </script>
 	</body>
+	<footer>
+	</footer>
 </html>
