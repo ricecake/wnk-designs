@@ -4,7 +4,7 @@
 $(document).ready(function(){
 	$('.tabs .tab-links a').on('click', function(e)  {
 		var currentAttrValue = $(this).attr('href');
-		$('.tabs ' + currentAttrValue).fadeIn(400).siblings().hide();
+		$('.tabs ' + currentAttrValue).addClass('active').fadeIn(400).siblings().hide().removeClass('active');
 		$(this).parent('li').addClass('active').siblings().removeClass('active');
 		e.preventDefault();
 	});

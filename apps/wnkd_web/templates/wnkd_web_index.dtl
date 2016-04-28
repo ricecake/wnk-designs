@@ -10,7 +10,6 @@
 
 	<div class="tab-content">
 		<div id="tab1" class="tab active">
-			<p>Content focused on materials go here</p>
 			<p>
 				<img src='/static/images/bowl.jpg' class='preview-image' />
 				Bacon ipsum dolor amet kielbasa swine rump ribeye, ham drumstick velit non cupidatat. Tail brisket sed cupidatat boudin sausage voluptate enim. Eu pig picanha bacon sed swine t-bone short loin. Occaecat ut sirloin spare ribs dolore minim in shoulder laboris corned beef irure landjaeger. Rump quis jowl pork loin irure labore kielbasa proident ut anim fugiat tri-tip tempor cillum. Brisket fatback shankle duis commodo in ex consectetur non corned beef nulla incididunt ut tenderloin jerky. Do pork belly eu, id minim turkey ground round incididunt sunt eiusmod voluptate mollit.
@@ -34,7 +33,6 @@
 		</div>
 
 		<div id="tab2" class="tab">
-			<p>Content focused on function go here</p>
 			<p>
 				<img src='/static/images/bird3.jpg' class='preview-image' />
 				Bacon ipsum dolor amet pork loin turkey ut picanha ham tongue, irure landjaeger shoulder t-bone exercitation cillum. Enim fatback jerky, doner ea tempor drumstick bresaola eu rump pig irure et. Hamburger filet mignon turducken qui aliqua swine. Cupidatat sed consectetur t-bone cow.
@@ -50,7 +48,6 @@
 		</div>
 
 		<div id="tab3" class="tab">
-			<p>Content focused on design work go here</p>
 			<p>
 				<img src='/static/images/flower.jpg' class='preview-image' />
 				Bacon ipsum dolor amet nisi boudin pariatur ribeye excepteur. Exercitation dolore ullamco doner porchetta, aliqua proident aliquip commodo cow ex officia prosciutto adipisicing flank. Corned beef ullamco do porchetta. Labore quis ad, chicken capicola mollit ball tip laboris deserunt consequat jowl anim short loin tenderloin meatball. Pork belly capicola shank, ham hock bacon fugiat ad et ut laborum tri-tip sint minim.
@@ -60,7 +57,6 @@
 				Pancetta aute t-bone kielbasa, pork loin meatloaf nulla ut. Prosciutto kielbasa pancetta fugiat sed ut spare ribs minim. Chicken ham hock nostrud, flank shank porchetta qui elit consectetur sed tongue. Pork belly ham pork, pastrami excepteur id pariatur mollit nulla magna bresaola sint drumstick anim hamburger. Andouille anim meatloaf spare ribs turkey consectetur aliqua. Fatback ribeye deserunt cupim occaecat consequat ball tip doner adipisicing.		</div>
 			</p>
 		<div id="tab4" class="tab">
-			<p>Content focused on Original works go here</p>
 			<p>
 				<img src='/static/images/bowl.jpg' class='preview-image' />
 				Bacon ipsum dolor amet beef ribs ea pastrami fatback capicola jerky, meatloaf veniam laboris cupim tri-tip ut exercitation. Ea shankle bresaola laboris. Voluptate jerky pork chop cupim capicola. Do chicken venison nostrud sed, excepteur veniam pork chop incididunt et cupim rump corned beef pork belly.
