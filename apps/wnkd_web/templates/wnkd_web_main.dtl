@@ -12,7 +12,9 @@
 		{% endblock %}
 	</head>
 	<nav>
-		<img class='logo' src='/static/images/logo.svg'/>
+		<a href='/' >
+			<img class='logo' src='/static/images/logo.svg' />
+		</a>
 	</nav>
 	<body>
 		<div id="main-content">
