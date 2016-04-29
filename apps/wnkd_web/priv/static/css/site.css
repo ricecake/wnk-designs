@@ -1,5 +1,5 @@
 html {
-	font-family: monospace;
+	font-family: serif;
 }
 
 body {
@@ -18,6 +18,10 @@ nav, footer {
 	margin: 1% 0% 1% 0%;
 }
 
+nav, footer, #main-content {
+	border-radius: 10px;
+}
+
 .link-display {
 	border: none;
 	background: none;
@@ -31,8 +35,14 @@ nav, footer {
 
 .logo {
 	width: 10%;
+	margin: 0 0 0 0.5%;
 }
 
+.display-item {
+	transition:all linear 0.25s;
+	display: flex;
+	flex-direction: row;
+}
 img.preview-image {
 	filter: grayscale(75%);
 	width: 100px;
@@ -42,4 +52,16 @@ img.preview-image {
 img.preview-image:hover {
 	filter: grayscale(0%);
 	width: 200px;
+}
+
+img.preview-image + .description {
+	display: none;
+}
+
+img.preview-image:hover + .description {
+	display: inline-block;
+}
+
+.display-item .description {
+	max-width: 66%;
 }
