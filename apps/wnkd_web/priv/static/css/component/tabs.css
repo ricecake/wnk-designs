@@ -56,4 +56,7 @@ li.active a, li.active a:hover {
 
 .tab.active {
 	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
