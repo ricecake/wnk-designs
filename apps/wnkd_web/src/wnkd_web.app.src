@@ -9,6 +9,7 @@
 		lager,
 		erlydtl,
 		cowboy,
+		wnkd,
 		jsx
 	]},
 	{env,[]},
