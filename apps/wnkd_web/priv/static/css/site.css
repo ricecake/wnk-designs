@@ -42,16 +42,20 @@ nav, footer, #main-content {
 	transition:all linear 0.25s;
 	display: flex;
 	flex-direction: row;
+	width: calc(25% - 6px);
 }
 img.preview-image {
 	filter: grayscale(75%);
-	width: 100px;
+	width: 50%;
 	transition:all linear 0.25s;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 img.preview-image:hover {
 	filter: grayscale(0%);
-	width: 200px;
+	width: 100%;
 }
 
 img.preview-image + .description {
