@@ -316,7 +316,7 @@
 					<div>
 					<a href="#close" title="Close" class="close">X</a>
 					<figure>
-						<img src='/static/images/bird3.jpg' class='feature-image' />
+						<img src='/static/images/bird2.jpg' class='feature-image' />
 						<figcaption>
 							Short loin alcatra ball tip t-bone. Corned beef in brisket ut occaecat id spare ribs. Nisi velit voluptate cupim alcatra cow veniam mollit deserunt pork chop short ribs brisket t-bone quis. Adipisicing leberkas est non laboris, et nulla veniam drumstick lorem velit tempor cupim. Nulla officia lorem, id picanha enim boudin. Velit swine leberkas pastrami, tongue drumstick do consectetur pork aute duis dolore kielbasa cillum ut. Frankfurter ad pariatur officia deserunt lorem cillum tempor ut duis leberkas fatback.
 						</figcaption>
@@ -342,6 +342,7 @@
 					</div>
 				</div>
 			</div>
+			{% displayitem uuid="flower" type="jpg" fulldescription="This is a test image" %}
 			<div class='display-item'>
 				<a href='#item14'>
 					<figure>

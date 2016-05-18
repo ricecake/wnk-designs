@@ -1,0 +1,18 @@
+<div class='display-item'>
+	<a href='#{{ uuid }}'>
+		<figure>
+			<img src='/static/images/{{ uuid }}.{{ type }}' class='preview-image' />
+		</figure>
+	</a>
+	<div id='{{ uuid }}' class='modalDialog'>
+		<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<figure>
+			<img src='/static/images/{{ uuid }}.{{ type }}' class='feature-image' />
+			<figcaption>
+				{{ fulldescription }}
+			</figcaption>
+		</figure>
+		</div>
+	</div>
+</div>
