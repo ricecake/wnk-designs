@@ -8,14 +8,17 @@ compile:
 doc:
 	@$(REBAR) edoc
 
+release:
+	@$(REBAR) release
+
+test-all:
+	@$(REBAR) do xref, dialyzer, eunit, cover
+
 test:
-	@$(REBAR) do xref, dialyzer, eunit, ct, cover
+	@$(REBAR) do xref, eunit, cover
 
 tar:
 	@$(REBAR) as prod tar
-
-rpm:
-	./rpmbuild.sh
 
 clean:
 	@$(REBAR) clean

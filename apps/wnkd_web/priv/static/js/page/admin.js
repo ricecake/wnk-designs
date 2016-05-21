@@ -9,7 +9,6 @@ $( "#new-item" ).submit(function( event ) {
 	var formData = $( this ).serializeArray();
 	for (var i = 0; i < formData.length; i++) {
 		var value = formData[i];
-		console.log(value);
 		itemData[value.name] = value.value;
 	}
 
@@ -19,7 +18,6 @@ $( "#new-item" ).submit(function( event ) {
 		files.push(fileList[i]);
 	}
 	var slurper = function(remainingFiles) {
-		console.log(remainingFiles);
 		var file = remainingFiles.shift();
 		if (file) {
 			var reader  = new FileReader();
@@ -33,13 +31,12 @@ $( "#new-item" ).submit(function( event ) {
 
 			reader.readAsArrayBuffer(file);
 		} else {
-			console.log(itemData);
+			$.post('api/item/new', JSON.stringify(itemData), function(){
+				console.log('sent');
+			}, 'json');
 		}
 	};
-	console.log(files);
 	slurper(files);
-
-	console.log(itemData);
 	event.preventDefault();
 });
 

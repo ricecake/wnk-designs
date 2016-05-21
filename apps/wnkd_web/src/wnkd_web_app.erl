@@ -23,7 +23,8 @@ start(_StartType, _StartArgs) ->
 					{"/static/[...]", cowboy_static, {priv_dir, wnkd_web, "static/"}},
 					% Dynamic Pages
 					{"/", wnkd_web_page, index},
-					{"/administration", wnkd_web_page, admin}
+					{"/administration", wnkd_web_page, admin},
+					{"/api/item/:action", wnkd_web_item, []}
 				]}
 			]),
 			{ok, _} = cowboy:start_http(wnkd_web, 25, [{ip, {127,0,0,1}}, {port, 8686}],
