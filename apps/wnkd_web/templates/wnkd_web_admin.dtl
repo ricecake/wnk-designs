@@ -1,0 +1,25 @@
+{% extends "wnkd_web_main.dtl" %}
+{% block mainContent %}
+
+<form id='new-item'>
+	<div>Title: <input type='text' name='title'></div>
+	<div>Description: <textarea name='description'></textarea></div>
+	<div>Category: <select name='category'>
+		<option>Material</option>
+		<option>Function</option>
+		<option>Design</option>
+		<option>Originals</option>
+	</select></div>
+	<div class='file-selector' >
+		<input type="file" class='file-input' multiple accept="image/*">
+		<a href="#" class="file-prompt">Select some files</a>
+		<div class="file-list">
+			<p>No files selected!</p>
+		</div>
+	</div>
+	<button type='submit'>Upload New Item</button>
+</form>
+
+{% endblock %}
+{% block extraCss %}
+{% endblock %}
