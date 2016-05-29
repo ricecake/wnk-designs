@@ -7,8 +7,9 @@
 		<li><a href="#tab3">Design</a></li>
 		<li><a href="#tab4">Originals</a></li>
 	</ul>
-
-	<div class="tab-content">
+<!--HERE {% for i in items %} {{ i.uuid }} {% endfor %}
+<img src='https://wnkd.objects.liquidweb.services/2e609c74-f475-4b3f-813b-6ae8a948fdb6/3bdf7c3e-afd3-4960-8b6d-e07162a009d0' />
+-->	<div class="tab-content">
 		<div id="tab1" class="tab active">
 			<div class='display-item'>
 				<a href='#item1'>
