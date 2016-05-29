@@ -5,10 +5,10 @@
 	<div>Title: <input type='text' name='title'></div>
 	<div>Description: <textarea name='description'></textarea></div>
 	<div>Category: <select name='category'>
-		<option>Material</option>
-		<option>Function</option>
-		<option>Design</option>
-		<option>Originals</option>
+		<option value='material' >Material</option>
+		<option value='function' >Function</option>
+		<option value='design' >Design</option>
+		<option value='original' >Originals</option>
 	</select></div>
 	<div class='file-selector' >
 		<input type="file" class='file-input' multiple accept="image/*">

@@ -8,7 +8,9 @@
 		stdlib,
 		lager,
 		pgapp,
-		erl_img
+		erl_img,
+		mini_s3,
+		sqerl
 	]},
 	{env,[]},
 	{modules, []},

@@ -51,6 +51,7 @@ BEGIN;
 
 	CREATE TABLE photo (
 		id SERIAL PRIMARY KEY,
+		featured BOOLEAN NOT NULL DEFAULT 'f',
 		item INTEGER REFERENCES item(id),
 		type photo_type NOT NULL,
 		role photo_role NOT NULL,

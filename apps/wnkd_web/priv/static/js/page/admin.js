@@ -31,8 +31,9 @@ $( "#new-item" ).submit(function( event ) {
 
 			reader.readAsArrayBuffer(file);
 		} else {
+			console.log(itemData);
 			$.post('api/item/new', JSON.stringify(itemData), function(){
-				console.log('sent');
+				//console.log('sent');
 			}, 'json');
 		}
 	};

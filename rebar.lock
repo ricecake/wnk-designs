@@ -46,6 +46,10 @@
   {git,"https://github.com/ricecake/mini_s3.git",
        {ref,"2ecc5c6f042b11204156b5ed5ec5429cc8bca3e0"}},
   0},
+ {<<"nicedecimal">>,
+  {git,"https://github.com/talentdeficit/nicedecimal.git",
+       {ref,"970f1f68f241ad6b78c73b8a92f075585153b509"}},
+  1},
  {<<"pgapp">>,
   {git,"https://github.com/epgsql/pgapp.git",
        {ref,"7183895ba8a30a8707ee5b197e64e24f1870a2d9"}},
@@ -57,4 +61,8 @@
  {<<"ranch">>,
   {git,"https://github.com/ninenines/ranch",
        {ref,"741bfb73ca663394ecf7a73410506d66f01985a6"}},
-  1}].
+  1},
+ {<<"sqerl">>,
+  {git,"https://github.com/devinus/sqerl.git",
+       {ref,"b33058b78171699ad80f318ac71dea5750be149f"}},
+  0}].
