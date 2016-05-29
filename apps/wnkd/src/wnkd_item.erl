@@ -1,13 +1,18 @@
 -module(wnkd_item).
 
 -export([
-	create/1
+	create/1,
+	list_active/0
 ]).
 
 -define(THUMB_WIDTH, 320).
 -define(FULL_WIDTH, 640).
 
 -include_lib("erl_img/include/erl_img.hrl").
+
+list_active() ->
+	{ok, Cols, Rows} = pgapp:equery(wnkd, "select * from item where active = true", []),
+	{ok, [populate_images(Item) || Item <- to_map(Cols, Rows)]}.
 
 create(#{ <<"images">> := Images, <<"primary">> := PrimaryImage } = Data) ->
 	{ok, ID} = insert_item(Data),
@@ -42,3 +47,18 @@ insert_item(#{<<"title">> := Name, <<"category">> := Category, <<"description">>
 		[Name, Category, Description]
 	),
 	{ok, {ID, UUID}}.
+
+populate_images(#{<<"id">> := ID} = Item) ->
+	{ok, Cols, Rows} = pgapp:equery(wnkd, "select * from photo where item = $1", [ID]),
+	Item#{<<"images">> => to_map(Cols, Rows) }.
+
+to_map(Cols, Rows) ->
+	ZipFun = fun({column, N, _, _, _, _}, V) ->
+		{N, V}
+	end,
+	[
+		begin
+			MatchedFields = lists:zipwith(ZipFun, Cols, tuple_to_list(Row)),
+			maps:from_list(MatchedFields)
+		end || Row <- Rows
+	].
