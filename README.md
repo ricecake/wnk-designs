@@ -16,3 +16,4 @@ TODO
 * ensure notion of "sub-category works" but make it optional
 * nix the resize, keep the color shift
 * design first in menue
+* Put title on overview under picture
