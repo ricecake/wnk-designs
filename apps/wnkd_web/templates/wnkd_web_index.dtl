@@ -2,7 +2,7 @@
 {% block mainContent %}
 <div class="tabs">
 	<ul class="tab-links">
-		<li class="active"><a href="#tab1">Material</a></li>
+		<li class="active"><a href="#material">Material</a></li>
 		<li><a href="#tab2">Function</a></li>
 		<li><a href="#tab3">Design</a></li>
 		<li><a href="#tab4">Originals</a></li>
@@ -10,8 +10,11 @@
 <!--HERE {% for i in items %} {{ i.uuid }} {% endfor %}
 <img src='https://wnkd.objects.liquidweb.services/2e609c74-f475-4b3f-813b-6ae8a948fdb6/3bdf7c3e-afd3-4960-8b6d-e07162a009d0' />
 -->	<div class="tab-content">
-		<div id="tab1" class="tab active">
-			<div class='display-item'>
+		<div id="material" class="tab active">
+			{% for item in material %}
+				{% displayitem item=item %}
+			{% endfor %}
+		<div class='display-item'>
 				<a href='#item1'>
 					<figure>
 						<img src='/static/images/bowl.jpg' class='preview-image' />
