@@ -34,8 +34,9 @@ nav, footer, #main-content {
 }
 
 .logo {
-	width: 10%;
-	margin: 0 0 0 0.5%;
+	display: block;
+	margin: 0 auto;
+	width: 35%;
 }
 
 .display-item {
@@ -45,8 +46,8 @@ nav, footer, #main-content {
 	width: calc(25% - 6px);
 }
 img.preview-image {
-	filter: grayscale(75%);
-	width: 50%;
+	filter: grayscale(50%);
+	width: 65%;
 	transition:all linear 0.25s;
 	display: block;
 	margin-left: auto;

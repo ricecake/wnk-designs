@@ -6,7 +6,6 @@
 			<img src='https://wnkd.objects.liquidweb.services/{{ item.uuid }}/{{ image.uuid }}' class='preview-image' />
 				{% endifequal %}
 			{% endfor %}
-			<!--<img src='/static/images/{{ item.uuid }}' class='preview-image' />-->
 		</figure>
 	</a>
 	<div id='{{ item.uuid }}' class='modalDialog'>
@@ -18,9 +17,8 @@
 			<img src='https://wnkd.objects.liquidweb.services/{{ item.uuid }}/{{ image.uuid }}' class='feature-image' />
 				{% endifequal %}
 			{% endfor %}
-			<!--<img src='/static/images/{{ item.uuid }}' class='feature-image' />-->
 			<figcaption>
-				{{ item.full_description }}
+				{{ item.full_description |safe }}
 			</figcaption>
 		</figure>
 		</div>

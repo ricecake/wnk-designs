@@ -13,6 +13,6 @@ init(Req, Args) ->
 	{ok, Req2, Args}.
 
 category_partition([], Acc) -> Acc;
-category_partition([#{ <<"category">> := Category } = Item | Rest], Acc) ->
+category_partition([#{ <<"category">> := Category, <<"full_description">> := Desc } = Item | Rest], Acc) ->
 	ThisCategory = maps:get(Category, Acc, []),
-	category_partition(Rest, Acc#{ Category => [Item |ThisCategory]}).
+	category_partition(Rest, Acc#{ Category => [Item#{ <<"full_description">> := markdown:conv(binary_to_list(Desc)) } |ThisCategory]}).
