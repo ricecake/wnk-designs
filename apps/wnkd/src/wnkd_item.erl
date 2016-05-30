@@ -37,7 +37,7 @@ process_images({ID, UUID}, PrimaryImage, [{Title, #{ <<"data">> := Data }} |Rest
 		[ID, Primary, <<"png">>, <<"fullsize">>]
 	),
 	FullPath = binary_to_list(<<UUID/binary, $/, FullUUID/binary>>),
-	mini_s3:put_object(Bucket, FullPath, [FullImage], [public_read], [], Client),
+	mini_s3:put_object(Bucket, FullPath, [FullImage], [{acl, public_read}], [], Client),
 
 	{ok, ThumbImage} = proportionalize(?THUMB_WIDTH, Image),
 	{ok, 1, _, [{ThumbUUID}]} = pgapp:equery(wnkd,
@@ -45,7 +45,7 @@ process_images({ID, UUID}, PrimaryImage, [{Title, #{ <<"data">> := Data }} |Rest
 		[ID, Primary, <<"png">>, <<"thumbnail">>]
 	),
 	ThumbPath = binary_to_list(<<UUID/binary, $/, ThumbUUID/binary>>),
-	mini_s3:put_object(Bucket, ThumbPath, [ThumbImage], [public_read], [], Client),
+	mini_s3:put_object(Bucket, ThumbPath, [ThumbImage], [{acl, public_read}], [], Client),
 
 	io:format("~p~n", [{Title, FullUUID, ThumbUUID}]),
 	process_images({ID, UUID}, PrimaryImage, Rest).
