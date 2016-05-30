@@ -6,6 +6,7 @@
 			<img src='https://wnkd.objects.liquidweb.services/{{ item.uuid }}/{{ image.uuid }}' class='preview-image' />
 				{% endifequal %}
 			{% endfor %}
+                        <figcaption>{{ item.title }}</figcaption>
 		</figure>
 	</a>
 	<div id='{{ item.uuid }}' class='modalDialog'>
