@@ -2,12 +2,17 @@
 {% block mainContent %}
 <div class="tabs">
 	<ul class="tab-links">
-		<li class="active"><a href="#material">Material</a></li>
+		<li class="active"><a href="#design">Design</a></li>
+		<li><a href="#material">Material</a></li>
 		<li><a href="#function">Function</a></li>
-		<li><a href="#design">Design</a></li>
 		<li><a href="#original">Originals</a></li>
 	</ul>
 	<div class="tab-content">
+		<div id="design" class="tab">
+			{% for item in design %}
+				{% displayitem item=item %}
+			{% endfor %}
+		</div>
 		<div id="material" class="tab active">
 			{% for item in material %}
 				{% displayitem item=item %}
@@ -15,11 +20,6 @@
 		</div>
 		<div id="function" class="tab">
 			{% for item in function %}
-				{% displayitem item=item %}
-			{% endfor %}
-		</div>
-		<div id="design" class="tab">
-			{% for item in design %}
 				{% displayitem item=item %}
 			{% endfor %}
 		</div>
